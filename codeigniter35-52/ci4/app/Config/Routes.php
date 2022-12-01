@@ -63,6 +63,7 @@ $routes->group('admin', ['filter' => 'Auth'], function($routes){
     $routes->add('pelanggan/create','Admin\pelanggan::create');
     $routes->add('pelanggan/find/(:any)','admin\pelanggan::find/$1');
     $routes->add('pelanggan/delete/(:any)','admin\pelanggan::delete/$1');
+    $routes->add('pelanggan/update/(:any)','Admin\pelanggan::update/$1');
 
     $routes->add('order','Admin\order::index');
     $routes->add('order/find/(:any)','admin\order::find/$1');
